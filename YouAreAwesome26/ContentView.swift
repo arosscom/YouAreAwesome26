@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var message = "I am a Programmer!"
+    @State private var message = "I am a Programmer !"
     let buttonLabel1 = "Awesome!"
     let buttonLabel2 = "Great!"
     
@@ -17,15 +17,19 @@ struct ContentView: View {
         
         VStack {
             
+            Spacer()
+            
             Image(systemName: "swift")
                 .resizable()
                 .scaledToFit()
                 .foregroundStyle(.orange)
+                .frame(width: 200, height: 200)
             
             Text(message)
                 .font(.largeTitle)
                 .fontWeight(.ultraLight)
-            //   .foregroundStyle()
+            
+            Spacer()
             
             HStack {
                 Button(buttonLabel1) {
